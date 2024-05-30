@@ -1,0 +1,30 @@
+{
+  "name": "@habibouldmoussa/oidc-provider-knex-for-istos",
+  "version": "1.0.0",
+  "description": "A knex based adapter for oidc-provider (https://www.npmjs.com/package/oidc-provider)",
+  "main": "src/index.js",
+  "scripts": {
+    "setup": "knex migrate:latest",
+    "test": "npm run setup ; ./node_modules/.bin/tap ./index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/centaur-team/TrueNorth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/centaur-team/TrueNorth/issues"
+  },
+  "homepage": "https://github.com/centaur-team/TrueNorth#readme",
+  "dependencies": {
+    "@types/oidc-provider": "^7.11.1",
+    "knex": "^2.1.0"
+  },
+  "devDependencies": {
+    "pg": "^8.7.3",
+    "sqlite3": "^5.0.8",
+    "tap": "^16.2.0",
+    "uuid": "^8.3.2"
+  }
+}
